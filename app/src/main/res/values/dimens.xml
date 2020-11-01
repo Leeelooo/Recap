@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default">16dp</dimen>
+    <dimen name="gutter_default">8dp</dimen>
+    <dimen name="micro_padding">4dp</dimen>
+
+    <dimen name="content_main_margin">64dp</dimen>
+    <dimen name="margin_edge_toolbar">16dp</dimen>
+    <dimen name="elevation_toolbar_default">0dp</dimen>
+
+    <dimen name="document_preview_dimen">80dp</dimen>
+    <dimen name="document_more_dimen">30dp</dimen>
+    <dimen name="dimen_profile_main">48dp</dimen>
+
+    <dimen name="current_item_stroke_width">2dp</dimen>
+    <dimen name="post_item_stroke_width">0dp</dimen>
+
+    <dimen name="marker_dimen">64dp</dimen>
+    <dimen name="marker_stroke_width">2dp</dimen>
+
+</resources>

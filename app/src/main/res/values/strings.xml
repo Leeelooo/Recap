@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">VKRecap</string>
+    <string name="share_btn_text">Send</string>
+    <string name="bottom_sheet_title">Share on wall</string>
+    <string name="add_comment">Add comment</string>
+    <string name="welcome_message">Click button below to</string>
+    <string name="welcome_message_login">Log in with VK</string>
+    <string name="post_share_ok">Post shared</string>
+    <string name="post_share_error">Loading error</string>
+    <string name="vk_api_version" translatable="false">5.124</string>
+    <string name="item_empty_text">No data</string>
+    <string name="item_loading_error_text">Error loading</string>
+    <string name="item_loading_error_btn_text">Retry</string>
+    <string name="title_post_settings">Post settings</string>
+    <string name="option_disable_comments">Disable comments</string>
+    <string name="chip_public_post">Public post</string>
+    <string name="chip_private_post">Private post</string>
+    <string name="chip_now">Now</string>
+    <string name="change_date_text">Change date</string>
+    <string name="clear_date_text">Clear delay</string>
+    <string name="option_disable_notifications">Disable notifications</string>
+    <string name="title_mentions">Mentions</string>
+</resources>

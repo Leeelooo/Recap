@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_other_attachment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/item_other_attachment_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="@dimen/margin_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/item_other_attachment_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gutter_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:singleLine="true"
+        android:textAppearance="@style/AppTheme.TextOtherAttachmentName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_other_attachment_image"
+        app:layout_constraintTop_toTopOf="@+id/item_other_attachment_image"
+        tools:text="@tools:sample/lorem" />
+
+    <TextView
+        android:id="@+id/item_other_attachment_additional"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textAppearance="@style/AppTheme.TextOtherAttachmentAdditional"
+        app:layout_constraintEnd_toEndOf="@+id/item_other_attachment_name"
+        app:layout_constraintStart_toStartOf="@+id/item_other_attachment_name"
+        app:layout_constraintTop_toBottomOf="@+id/item_other_attachment_name"
+        tools:text="@tools:sample/lorem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

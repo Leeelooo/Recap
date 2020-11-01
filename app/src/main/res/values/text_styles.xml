@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.TextTitle" parent="TextAppearance.AppTheme.Headline6">
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+
+    <style name="AppTheme.TextInfo" parent="TextAppearance.AppTheme.Body1">
+        <item name="android:textColor">@color/colorOnPrimaryMedium</item>
+    </style>
+
+    <style name="AppTheme.TextTitleBottomSheet" parent="TextAppearance.AppTheme.Body1">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.MessageText" parent="TextAppearance.AppTheme.Subtitle1">
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+
+    <style name="AppTheme.TextPostDate" parent="TextAppearance.AppTheme.Body2">
+        <item name="android:textColor">@color/colorOnSurfaceMedium</item>
+    </style>
+
+    <style name="AppTheme.TextPostBody" parent="TextAppearance.AppTheme.Body1">
+        <item name="android:textColor">@color/colorOnSurfaceMedium</item>
+    </style>
+
+    <style name="AppTheme.TextLikeCounter" parent="TextAppearance.AppTheme.Caption">
+        <item name="android:textColor">@color/colorOnSurfaceMedium</item>
+    </style>
+
+    <style name="AppTheme.TextOtherAttachmentName" parent="TextAppearance.AppTheme.Body1">
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+
+    <style name="AppTheme.TextOtherAttachmentAdditional" parent="TextAppearance.AppTheme.Body2">
+        <item name="android:textColor">@color/colorOnSurfaceMedium</item>
+    </style>
+
+</resources>

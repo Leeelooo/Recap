@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VKShare</string>
+    <string name="bottom_sheet_title">Поделиться на стене</string>
+    <string name="share_btn_text">Отправить</string>
+    <string name="add_comment">Добавить комментарий</string>
+    <string name="welcome_message">Нажмите на кнопку ниже чтобы</string>
+    <string name="welcome_message_login">Зайти с помощью ВКонтакте</string>
+    <string name="post_share_ok">Опубликовано</string>
+    <string name="post_share_error">Ошибка загрузки</string>
+    <string name="item_empty_text">Нет информации</string>
+    <string name="item_loading_error_text">Ошибка загрузки</string>
+    <string name="item_loading_error_btn_text">Перезапустить</string>
+    <string name="title_post_settings">Настройки поста</string>
+    <string name="option_disable_comments">Отключить комментарии</string>
+    <string name="chip_public_post">Публичный</string>
+    <string name="chip_private_post">Приватный</string>
+    <string name="chip_now">Сейчас</string>
+    <string name="change_date_text">Изменить дату</string>
+    <string name="clear_date_text">Очистить дату</string>
+    <string name="option_disable_notifications">Отключить оповещения</string>
+    <string name="title_mentions">Упоминания</string>
+</resources>

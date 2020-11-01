@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.imageview.ShapeableImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/marker_post"
+    android:layout_width="64dp"
+    android:layout_height="64dp"
+    android:scaleType="centerCrop"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/colorPrimarySurface"
+    app:shapeAppearance="@style/AppTheme.SmoothCornerView"
+    tools:src="@tools:sample/backgrounds/scenic" />

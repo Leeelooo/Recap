@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_bottom_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_dialog">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/bottom_sheet_user_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/AppTheme.CircleImageView"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gutter_default"
+            android:layout_marginEnd="@dimen/gutter_default"
+            android:textAppearance="@style/AppTheme.TextTitleBottomSheet"
+            app:layout_constraintEnd_toStartOf="@+id/bottom_sheet_dismiss"
+            app:layout_constraintStart_toEndOf="@+id/bottom_sheet_user_icon"
+            app:layout_constraintTop_toTopOf="@+id/bottom_sheet_user_icon"
+            tools:text="Vladosik Tugovasik" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_post_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/AppTheme.TextPostDate"
+            app:layout_constraintEnd_toEndOf="@+id/bottom_sheet_user_name"
+            app:layout_constraintStart_toStartOf="@+id/bottom_sheet_user_name"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_user_name"
+            tools:text="@tools:sample/date/mmddyy" />
+
+        <ImageView
+            android:id="@+id/bottom_sheet_dismiss"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:src="@drawable/ic_dismiss"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_post_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/gutter_default"
+            android:textAppearance="@style/AppTheme.TextPostBody"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_user_icon"
+            tools:text="@tools:sample/lorem" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bottom_sheet_photo_attachments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_post_text"
+            tools:listitem="@layout/item_photo_attachment"
+            tools:orientation="horizontal"
+            tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bottom_sheet_other_attachments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_photo_attachments"
+            tools:listitem="@layout/item_other_attachment"
+            tools:itemCount="3"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/copy_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/gutter_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_other_attachments">
+
+            <View
+                android:id="@+id/outline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/margin_default"
+                android:background="@color/colorGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/bottom_sheet_copy_user_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="@dimen/margin_default"
+                android:layout_marginTop="@dimen/gutter_default"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearance="@style/AppTheme.CircleImageView"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_copy_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gutter_default"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:textAppearance="@style/AppTheme.TextTitleBottomSheet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/bottom_sheet_copy_user_icon"
+                app:layout_constraintTop_toTopOf="@+id/bottom_sheet_copy_user_icon"
+                tools:text="Vladosik Tugovasik" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_copy_post_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/AppTheme.TextPostDate"
+                app:layout_constraintEnd_toEndOf="@+id/bottom_sheet_copy_user_name"
+                app:layout_constraintStart_toStartOf="@+id/bottom_sheet_copy_user_name"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_copy_user_name"
+                tools:text="@tools:sample/date/mmddyy" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_copy_post_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_default"
+                android:layout_marginEnd="@dimen/margin_default"
+                android:textAppearance="@style/AppTheme.TextPostBody"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_copy_user_icon"
+                tools:text="@tools:sample/lorem" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bottom_sheet_copy_photo_attachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_copy_post_text"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_photo_attachment"
+                tools:orientation="horizontal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/bottom_sheet_copy_other_attachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_copy_photo_attachments"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_other_attachment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/bottom_sheet_likes_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/gutter_default"
+            android:src="@drawable/ic_likes"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/copy_post" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_likes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gutter_default"
+            android:textAppearance="@style/AppTheme.TextLikeCounter"
+            app:layout_constraintBottom_toBottomOf="@+id/bottom_sheet_likes_btn"
+            app:layout_constraintStart_toEndOf="@+id/bottom_sheet_likes_btn"
+            app:layout_constraintTop_toTopOf="@+id/bottom_sheet_likes_btn"
+            tools:text="45" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

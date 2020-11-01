@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/bottom_sheet_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="48dp"
+        android:text="@string/title_post_settings"
+        android:textAppearance="@style/AppTheme.TextTitleBottomSheet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bottom_sheet_dismiss"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:src="@drawable/ic_dismiss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/option_disable_comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:text="@string/option_disable_comments"
+        android:textAppearance="@style/TextAppearance.AppTheme.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/option_disable_comment_switch"
+        app:layout_constraintEnd_toStartOf="@+id/option_disable_comment_switch"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/option_disable_comment_switch" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/option_disable_comment_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        app:trackTint="@color/colorAccent"
+        app:thumbTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_user_name" />
+
+    <TextView
+        android:id="@+id/option_disable_notifications"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:text="@string/option_disable_notifications"
+        android:textAppearance="@style/TextAppearance.AppTheme.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/option_disable_notifications_switch"
+        app:layout_constraintEnd_toStartOf="@+id/option_disable_notifications_switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/option_disable_notifications_switch" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/option_disable_notifications_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:layout_marginBottom="@dimen/margin_default"
+        app:trackTint="@color/colorAccent"
+        app:thumbTint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_disable_comment_switch"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
