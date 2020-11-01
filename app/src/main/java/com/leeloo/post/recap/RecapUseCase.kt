@@ -37,7 +37,7 @@ class RecapUseCaseImpl(
     }
 
     companion object {
-        private const val WEEK_IN_MILLIS = 5 * 604800L
+        private const val WEEK_IN_MILLIS = 604800L
     }
 
 }
